@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cybersecurity project</title>
+
+        <style>
+            body {
+                display:block;
+                justify-content: center;
+                height: 10vh;
+                margin: 0;
+                background-color: rgb(255, 255, 255);
+                color: rgb(0, 94, 255);
+            }
+     
+     
+            header {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+     
+     
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+     
+     
+            label {
+                margin-bottom: 10px;
+            }
+     
+     
+            input[type="text"],
+            input[type="password"],
+            input[type="submit"] {
+                margin-bottom: 20px;
+            }
+     
+     
+            input[type="submit"] {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <h1>Cybersecurity project</h1>
+        
+        Hello there! Click on this <a href="https://www.youtube.com/watch?v=FveF-we6lcE&ab_channel=RealHumanBean" target="_blank"> link </a> to win an Iphone 15 pro max!!
+        <br><br>
+        Here is a picture of <b>Calvin</b> getting a haircut. <br>
+        <img src="IMG_4835.JPG" border="10"> <br>
+        
+        <article class="regular">
+            <h2>Textbox</h2>
+
+            <label for="tbuser">Username</label>
+            <input type="text" id="tbuser" placeholder="Enter Username" maxlength="10">
+
+            <label for="tbpwd">Password</label>
+            <input type="text" id="tbpwd" placeholder="Enter Password" maxlength="10">
+        
+            <input type="button" id="btn" value="Enter">
+
+            <p class="output" id="output1"></p>
+            <p class="output" id="output2"></p>
+        </article>
+        
+        <script type="text/Javascript">
+            const txt1 = document.getElementById('tbuser');
+            const out1 = document.getElementById('output1');
+
+            const txt2 = document.getElementById('tbpwd');
+            const out2 = document.getElementById('output2');
+
+            const btn = document.getElementById('btn');
+
+            function fun1() {
+                <!-- look at contents in between paragraph tags --> 
+                out1.innerHTML = txt1.value;
+                out2.innerHTML = txt2.value;
+            }
+
+            btn.addEventListener('click',fun1);
+        </script>
+    </body>
+</html>
+
